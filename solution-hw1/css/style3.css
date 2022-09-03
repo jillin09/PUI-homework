@@ -1,0 +1,75 @@
+
+#logo {  
+    width: 420px;  
+    height: auto;  
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    }  
+hr{
+    border: 3px solid black;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#cart{
+    background-color: yellow;
+    font-weight:bold;
+} 
+.topsec{
+    color:black;
+    text-align: center;
+    font-size: 25px;
+    line-height: 220%;
+    text-decoration-line: none;
+}
+#page-title {
+    font-size: 35px;
+}
+#page-title{
+    text-align:center;
+}
+
+.cart-thumbnail {
+    border: 3px black solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.cart-item{
+    text-align: center;
+}
+.remove{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 9px;
+}
+.descrip{
+    font-size:25px;
+    line-height: 130%;
+}
+#second-line{
+    width:60%;
+}
+#lastline{
+    font-size:25px;
+}
+#checkout{
+    background-color: yellow;
+    border: 5px solid black;
+    padding: 10px 30px 10px 30px;
+    margin:auto;
+    font-weight: bold;
+}

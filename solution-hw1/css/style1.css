@@ -1,0 +1,70 @@
+
+#logo {  
+    width: 420px;  
+    height: auto;  
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    }  
+hr{
+    border: 3px solid black;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#product{
+    background-color: yellow;
+    font-weight:bold;
+
+} 
+.topsec{
+    color:black;
+    text-align: center;
+    font-size: 25px;
+    line-height: 220%;
+    text-decoration-line: none;
+}
+#page-title {
+    font-size: 35px;
+}
+#page-title{
+    text-align:center;
+}
+.card {
+    width: 300px;
+    height: auto;
+    background-color: white;
+    margin:10px auto 10px auto;
+    padding:10px 10px 10px 10px;
+}
+
+.card-thumbnail {
+    width: 295px;
+    height: auto;
+    border: 3px black solid;
+}
+.roll-title{
+    text-align: left;
+    font-size: 25px;
+}
+.card:hover {
+    background-color: yellow;
+    cursor: pointer;
+
+}
+#boldtext:hover{
+    font-weight: bold;
+    cursor: pointer;
+
+}
