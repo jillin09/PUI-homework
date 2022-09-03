@@ -1,5 +1,6 @@
 # PUI homework
 
-Deployed website: `https://jillin09.github.io/teach-pui-example/`
+Deployed website: `https://jillin09.github.io/PUI-homework/`
 
-Repository link: `https://github.com/jillin09/teach-pui-example`
+Repository link: `https://github.com/jillin09/PUI-homework`
+
