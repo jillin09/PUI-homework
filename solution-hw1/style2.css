@@ -1,0 +1,75 @@
+
+#logo {  
+    width: 420px;  
+    height: auto;  
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    }  
+hr{
+    border: 3px solid black;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#product{
+    background-color: yellow;
+    font-weight:bold;
+
+}
+.topsec{
+    color:black;
+    text-align: center;
+    font-size: 25px;
+    line-height: 220%;
+    text-decoration-line: none;
+}
+#page-title {
+    font-size: 35px;
+}
+#page-title{
+    text-align:center;
+}
+
+.card-thumbnail {
+    border: 3px black solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.description{
+    font-size:25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32%;
+}
+#dropdown {
+    width: 330px;
+    height:60px;
+    border:black 5px solid;
+    font-size:28px;
+    margin-top: -12px;
+}
+#lastline{
+    font-weight: bold;
+}
+#cartbutton{
+    text-align: right;
+    background-color: yellow;
+    border: 5px solid black;
+    padding: 10px 30px 10px 30px;
+    margin:auto auto auto 20px
+} 
