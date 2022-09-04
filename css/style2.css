@@ -8,7 +8,7 @@
 
     }  
 hr{
-    border: 3px solid black;
+    border-top: 5px solid black;
 }
 
 a:link {
@@ -37,8 +37,6 @@ body{
 }
 #page-title {
     font-size: 35px;
-}
-#page-title{
     text-align:center;
 }
 
@@ -57,7 +55,7 @@ body{
     width: 32%;
 }
 #dropdown {
-    width: 330px;
+    width: 370px;
     height:60px;
     border:black 5px solid;
     font-size:28px;
