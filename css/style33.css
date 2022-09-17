@@ -1,0 +1,118 @@
+
+
+#logo {  
+    width: 400px;  
+    height: auto;  
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    flex-grow: 1;
+
+
+    }  
+hr{
+    border-top: 5px solid black;
+    flex-grow: 2;
+    flex-wrap: wrap;
+
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+  }
+
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#product{
+    
+    margin-right: 80px;
+
+} 
+#cart{
+    background-color: yellow;
+    font-weight:bold;
+    margin-right: 80px;
+
+} 
+.topsec{
+    display: flex;
+    flex-wrap: wrap;
+    color:black;
+    font-size: 23px;
+}
+.topnavright{
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+.navwords{
+    text-align:right;
+
+}
+#page-title {
+    font-size: 28px;
+    text-align:left;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+
+
+.cart-thumbnail {
+    border: 3px black solid;
+    width: 150px;
+}
+
+.cart-item{
+   
+}
+.onecontainer{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.remove{
+    font-size: 11px;
+    font-weight: bold;
+}
+.descrip{
+    font-size:22px;
+    line-height: 130%;
+    width: 365px;
+}
+.emptybox{
+    height: 50px;
+    width: 410px;
+    background-color:transparent;
+}
+.emptybox2{
+    height: 50px;
+    width: 156px;
+    background-color:transparent;
+}
+.emptybox3{
+    width: 450px;
+    background-color:transparent;
+}
+.price{
+    font-size: 24px;
+}
+
+#lastline{
+    font-size:25px;
+}
+#checkout{
+    background-color: yellow;
+    border: 5px solid black;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
