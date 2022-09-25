@@ -3,6 +3,8 @@
   <meta charset="UTF-8">
   <title>Bun Bun Bake Shop Gallery</title>
   <link rel="stylesheet" href="../css/style22.css">
+  <script defer src="app.js"></script>
+
   <body>
 
  
@@ -52,35 +54,32 @@
         <!--First dropdown menu-->
 
         <label for="glazing">Glazing:</label><br><br>
-          <select name="glazing" id="dropdown">
-            <option value="Keep-original">Keep original</option>
-            <option value="Sugar-milk">Sugar milk</option>
-            <option value="Vanilla-milk">Vanilla milk</option>
-            <option value="Double-chocolate">Double chocolate</option>
+          <select id="dropdown" onchange="glazingChange(this)">
+       
           </select>
           <br><br>
 
         <!--second dropdown menu-->
 
         <label for="pack">Pack size:</label><br><br>
-          <select name="pack" id="dropdown">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
+          <select id="dropdown2" onchange="packChange(this)">
+      
           </select>
-
+          
           <br><br>
 
+
+          
         <!--bottom add to cart button and price-->
 
-        <p id="lastline">$ 2.49
+        <p id="lastline"><span id="priceAll">$ 2.49</span>
           <span id="cartbutton">Add to cart</span> 
         </p>
       </div>
-
+     
     </div>
 
+    
     </div>
 
   </body>
