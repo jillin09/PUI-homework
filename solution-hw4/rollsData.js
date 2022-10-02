@@ -1,7 +1,7 @@
 const rollop = {
     "Original": {
         "basePrice": 2.49,
-        "imageFile": src = '../asset/products/Original-cinnamon-roll.jpg'
+        "imageFile": src = '../asset/products/original-cinnamon-roll.jpg'
     },
     "Apple": {
         "basePrice": 3.49,
