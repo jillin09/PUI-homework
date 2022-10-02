@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop Gallery</title>
+  <link rel="stylesheet" href="../css/style22.css">
+  <script defer src="app.js"></script>
+
+  <body>
+
+ 
+    <a href="./index.html"> 
+      <div class="topsec">
+        <!--Top Bar with Logo-->
+  
+        <img id="logo" src="../asset/logo/logo-01.svg" alt="Bun Bun Logo"></a>
+  
+  
+        <div class="topnavright">
+          <br>
+  
+          <br>
+          <div class="navwords">
+
+           <a href="./index.html"id="product"> PRODUCTS</a>
+           
+           <a href="./cart.html"id="cart">CART</a>
+
+          </div>
+          <br>
+          <br>
+            <hr>  
+          <br>
+          <p id="page-title">
+            Original cinnamon roll
+            <!--PageTitle-->
+    
+          </p>
+        </div>
+        <br>
+  
+      </div>
+      <br>
+      <br>
+    <div class="container">
+      <div class="emptybox"> </div> 
+
+
+      <img class="card-thumbnail" src="../asset/products/original-cinnamon-roll.jpg" alt = "original-cinnamon-roll">
+     
+      <!--show large cinnamon roll display-->
+      
+      <div class="description">
+        <p>Customize our delicious, hand-made cinnamon roll to your liking! </p>
+        <br>
+        
+        <!--First dropdown menu-->
+
+        <label for="glazing">Glazing:</label><br><br>
+          <select id="dropdown" onchange="glazingChange(this)">
+       
+          </select>
+          <br><br>
+
+        <!--second dropdown menu-->
+
+        <label for="pack">Pack size:</label><br><br>
+          <select id="dropdown2" onchange="packChange(this)">
+      
+          </select>
+          
+          <br>
+
+
+          
+        <!--bottom add to cart button and price-->
+        <br>
+        <p id="lastline"><span id="priceAll">$ 2.49</span>
+          <span id="cartbutton">Add to cart</span> 
+        </p>
+      </div>
+      <div class="emptybox"> </div> 
+
+    </div>
+
+    
+    </div>
+
+  </body>
+</html>
+
