@@ -11,6 +11,7 @@ headerElement.innerText = rollType + ' cinnamon roll' ;
 const cinnaImage = document.querySelector('.card-thumbnail');
 cinnaImage.src = rollop[rollType].imageFile;
 
+
 // Update price
 const currentPrice = document.querySelector('#priceAll');
 currentPrice.innerText = rollop[rollType].basePrice + " $";
