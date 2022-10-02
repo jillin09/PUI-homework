@@ -66,11 +66,10 @@ a:visited {
     height: auto;
     background-color: white;
     margin:10px auto 10px auto;
-    padding:10px 10px 10px 10px;
+    padding:10px ;
 }
 .mybox {
     display: flex;
-    gap:30px;
     flex-wrap: wrap;
 }
 .card-thumbnail {

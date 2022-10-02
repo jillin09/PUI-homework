@@ -1,3 +1,22 @@
+const cart=[];
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+// Update the header text
+const headerElement = document.querySelector('#page-title');
+headerElement.innerText = rollType + ' cinnamon roll' ;
+
+// Update the image
+const cinnaImage = document.querySelector('.card-thumbnail');
+cinnaImage.src = rollop[rollType].imageFile;
+
+// Update price
+const currentPrice = document.querySelector('#priceAll');
+currentPrice.innerText = rollop[rollType].basePrice + " $";
+
+
+
 // create glazing and pack options
     let allFlavors = [
     {
@@ -42,11 +61,10 @@
    let mylist = document.querySelector("#dropdown");
 
   // dynamic populate flavor options  
-
    for (let i = 0; i < allPacks.length; i++) {
     let option = document.createElement("option");
     let nowvalue = allFlavors[i]
-    option.value =2.49 + nowvalue.priceChange;
+    option.value =rollop[rollType].basePrice+ nowvalue.priceChange;
     option.text = nowvalue.flavor;
     mylist.add(option);
      }
@@ -80,5 +98,25 @@ function packChange(element) {
     document.getElementById("priceAll").innerHTML = '$ ' + parseFloat(PackSize*glazingcost).toFixed(2);
   }
   
+///When the user clicks on “Add to Cart,” save all of the current product 
+//information (roll type, glazing, pack size, base price) into an instance of the class Roll
+  class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
 
 
+const addtocart = document.querySelector('#cartbutton');
+
+addtocart.onclick = function addToCa() {
+  let mypac = document.getElementById('dropdown2').options[document.getElementById('dropdown2').selectedIndex].text ;
+  let glazinNow = document.getElementById('dropdown').options[document.getElementById('dropdown').selectedIndex].text;
+    newItem = new Roll(rollType, glazinNow,mypac,document.getElementById('dropdown').value);
+    console.log(newItem);
+    cart.push(newItem);
+    console.log(cart);
+}

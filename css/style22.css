@@ -92,7 +92,7 @@ a:visited {
 }
 
 .description{
-    font-size:25px;
+    font-size:23px;
     display: block;
     margin-right: 70px;
     width: 370px;
@@ -101,14 +101,14 @@ a:visited {
 #dropdown {
     width: 350px;
     height:50px;
-    border:black 3px solid;
+    border:black 2px solid;
     font-size:22px;
     margin-top: -12px;
 }
 #dropdown2 {
     width: 350px;
     height:50px;
-    border:black 3px solid;
+    border:black 2px solid;
     font-size:22px;
     margin-top: -12px;
 }
@@ -118,7 +118,27 @@ a:visited {
 #cartbutton{
     text-align: right;
     background-color: yellow;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px 30px 10px 30px;
     margin:auto auto auto 55px
+} 
+
+#cartbutton:hover{
+    text-align: right;
+    background-color: #ffe522;
+    border: 2px solid black;
+    padding: 10px 30px 10px 30px;
+    margin:auto auto auto 55px;
+    cursor:pointer;    
+} 
+
+#cartbutton:active{
+    text-align: right;
+    background-color: #ffe522;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgb(228, 144, 33);
+    transform: translateY(4px);
+    padding: 10px 30px 10px 30px;
+    margin:auto auto auto 55px;
+    cursor:pointer;    
 } 
