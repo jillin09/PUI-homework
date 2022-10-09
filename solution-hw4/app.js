@@ -17,7 +17,6 @@ const currentPrice = document.querySelector('#priceAll');
 currentPrice.innerText = rollop[rollType].basePrice + " $";
 
 
-
 // create glazing and pack options
     let allFlavors = [
     {
@@ -82,7 +81,7 @@ currentPrice.innerText = rollop[rollType].basePrice + " $";
     option.value = nowvalue.packChange;
     option.text = nowvalue.pack;
     mylist2.add(option);
-     }
+   }
 
 function glazingChange(element) {
   // get value of selected glazing option
