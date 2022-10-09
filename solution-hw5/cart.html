@@ -3,7 +3,8 @@
   <meta charset="UTF-8">
   <title>Bun Bun Bake Shop Gallery</title>
   <link rel="stylesheet" href="../css/style33.css">
-
+  <script defer src="./rollsData.js"></script>
+  <script defer src="./cartApp.js"></script>
  
   <a href="./index.html"> 
     <div class="topsec">
@@ -41,39 +42,29 @@
     <!--Shopping Cart title-->
   
       <div class="cart-item">
-        <div class="onecontainer">
-         <!--Product 1 review with remove button-->
-         <div class="emptybox"> </div> 
+
+        <template id="cartTemplate">
+
+         <div class="onecontainer">
+           <!--Product 1 review with remove button-->
+          <div class="emptybox"> </div> 
            <div class="box1">
-             <img class="cart-thumbnail" src="../asset/products/original-cinnamon-roll.jpg" alt = "original-cinnamon-roll">
+             <img class="cart-thumbnail" img src="../asset/products/double-chocolate-cinnamon-roll.jpg" alt = "original-cinnamon-roll"> </img>
                 <br>
-             <span class="remove"> Remove</span>
+             <span class="remove"> Remove </span>
            </div>
-           <p class="descrip"> Original Cinnamon Roll<br>
-              Glazing: Keep Original<br>
-              Pack Size: 1 
+           <p class="descrip"> <span id= "nameChoice">Double Chocolate</span> Cinnamon Roll <br>
+              Glazing: <span id= "glazChoice"> Sugar milk</span> <br>
+              Pack Size: <span id= "packChoice">6</span>
            </p>
            <p class="price">
             $ 2.49
-           </p>
+           </p>  
 
-        </div>
-        <div class="onecontainer">
-         <!--Product 2 review with remove button-->
-         <div class="emptybox"> </div> 
-           <div class="box1">
-             <img class="cart-thumbnail" src="../asset/products/double-chocolate-cinnamon-roll.jpg" alt = "double-chocolate-cinnamon-roll">
-                <br>
-             <span class="remove"> Remove</span>
-           </div>
-           <p class="descrip"> Double Chocolate Cinnamon Roll <br>
-            Glazing: Sugar milk<br>
-            Pack Size: 6
-           </p>
-           <p class="price">
-            $ 27.45
-           </p>
+         </div>
+        </template>
 
+    
 
         </div>
 
@@ -94,7 +85,7 @@
             <p class="descrip"> 
               Total
             </p>
-            <p class="price">
+            <p class="priceTotal">
               $ 29.94
             </p>
         </div>
