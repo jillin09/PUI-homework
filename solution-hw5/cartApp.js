@@ -28,7 +28,7 @@ function newRolls(rollType, rollGlazing, packSize, basePrice){
 const roll1 = newRolls('Original', 'Sugar Milk', '1', rollop["Original"].basePrice);
 const roll2 = newRolls('Walnut', 'Vanilla Milk', '12', rollop["Walnut"].basePrice);
 const roll3 = newRolls('Raisin', 'Sugar Milk', '3', rollop["Raisin"].basePrice);
-const roll4 = newRolls('Apple', 'Orignal', '3', rollop["Apple"].basePrice);
+const roll4 = newRolls('Apple', 'Original', '3', rollop["Apple"].basePrice);
 
 
 //function to calculate total price in the shopping cart which can also be used to update price
