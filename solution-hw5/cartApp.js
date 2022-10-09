@@ -4,9 +4,7 @@ function deleteElement(newOne) {
   newRollset.delete(newOne);
 }
 
-
 //information (roll type, glazing, pack size, base price) into an instance of the class Roll
-
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -91,24 +89,25 @@ for (const newOne of newRollset){
   newCartItem(newOne);
 }
 
+//function to change text and image description of each item 
 function changeTextimg(newOne){
 
+  //get elements id/class from DOM
   const imgElement = newOne.element.querySelector(".cart-thumbnail");
   const packElement = newOne.element.querySelector("#packChoice");
   const glazeElement = newOne.element.querySelector("#glazChoice");
   const nameElement = newOne.element.querySelector("#nameChoice");
   const priceElement = newOne.element.querySelector(".price");
-
+  //replace these element with current data from rollop.js
   imgElement.src =rollop[newOne.type].imageFile;
   nameElement.innerText = newOne.type ;
   glazeElement.innerText =  newOne.glazing;
   packElement.innerText = newOne.size;
-
+  //get price and pack to calculate price per item group
   let basePricenow  = newOne.basePrice;
   let packnow  = newOne.size;
 
   //pack size change
-
   if (packnow == 6) {
     packnow = 5;
   } else if (packnow == 12) {
@@ -119,7 +118,6 @@ function changeTextimg(newOne){
   let nowGlaze  = newOne.glazing;
 
   //glazing price change
-
   if (nowGlaze == "Vanilla Milk") {
     basePricenow = basePricenow+0.5;
   } else if (nowGlaze == "Double Chocolate") {
@@ -129,12 +127,10 @@ function changeTextimg(newOne){
   }
 
   let packPrice = packnow*basePricenow;
+  //update price per pack group to the page
   priceElement.innerText = "$ "+packPrice.toFixed(2);
 }
 
-
+//call total price function to calculate total at the beginning 
 const totalElement = document.querySelector(".priceTotal");
 totalElement.innerText = "$ "+totalPrice();
-
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
