@@ -119,9 +119,7 @@ const addtocart = document.querySelector('#cartbutton');
 if (localStorage.getItem('storedRolls') != null) {
   checkLocalStorage();
 }
-else{
-  cartRoll = [];
-}
+
 
 //on click function of add to cart button
 //contains 1.push new roll
