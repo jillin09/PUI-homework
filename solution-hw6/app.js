@@ -120,7 +120,7 @@ if (localStorage.getItem('storedRolls') != null) {
   checkLocalStorage();
 }
 else{
-  cartRoll = cartRoll;
+  cartRoll = [];
 }
 
 //on click function of add to cart button
