@@ -125,7 +125,8 @@ a:visited {
 
 #cartbutton:hover{
     text-align: right;
-    background-color: #ffe522;
+    color:white;
+    background-color: red;
     border: 2px solid black;
     padding: 10px 30px 10px 30px;
     margin:auto auto auto 55px;
@@ -134,10 +135,10 @@ a:visited {
 
 #cartbutton:active{
     text-align: right;
-    background-color: #ffe522;
+    color:white;
+    background-color: red;
     border: 2px solid black;
-    box-shadow: 2px 2px rgb(228, 144, 33);
-    transform: translateY(4px);
+    box-shadow: 5px 1px black;
     padding: 10px 30px 10px 30px;
     margin:auto auto auto 55px;
     cursor:pointer;    
