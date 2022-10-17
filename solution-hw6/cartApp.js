@@ -1,8 +1,3 @@
-// Remove button function. delete both graphical representation and data
-function deleteElement(newOne) {
-  newOne.element.remove();
-  newRollset.delete(newOne);
-}
 
 //information (roll type, glazing, pack size, base price) into an instance of the class Roll
 class Roll {
@@ -25,10 +20,10 @@ function newRolls(rollType, rollGlazing, packSize, basePrice){
 }
 
 //code roll data provided in the assignment
-const roll1 = newRolls('Original', 'Sugar Milk', '1', rollop["Original"].basePrice);
-const roll2 = newRolls('Walnut', 'Vanilla Milk', '12', rollop["Walnut"].basePrice);
-const roll3 = newRolls('Raisin', 'Sugar Milk', '3', rollop["Raisin"].basePrice);
-const roll4 = newRolls('Apple', 'Original', '3', rollop["Apple"].basePrice);
+//const roll1 = newRolls('Original', 'Sugar Milk', '1', rollop["Original"].basePrice);
+//const roll2 = newRolls('Walnut', 'Vanilla Milk', '12', rollop["Walnut"].basePrice);
+//const roll3 = newRolls('Raisin', 'Sugar Milk', '3', rollop["Raisin"].basePrice);
+//const roll4 = newRolls('Apple', 'Original', '3', rollop["Apple"].basePrice);
 
 
 //function to calculate total price in the shopping cart which can also be used to update price
@@ -51,9 +46,8 @@ function totalPrice(){
     //glazing price change
     if (glz == "Vanilla Milk") {
       price = price+0.5;
-    } else if (glz == "Double Chocolate") {
-      price = price+1.5;
-    } else {
+    } 
+    else {
       price = price;
     }
   let total = price*pack;
@@ -62,6 +56,7 @@ function totalPrice(){
   }
 
   //total price to two digits
+
  return ttPrice.toFixed(2);
 
 }
@@ -120,8 +115,6 @@ function changeTextimg(newOne){
   //glazing price change
   if (nowGlaze == "Vanilla Milk") {
     basePricenow = basePricenow+0.5;
-  } else if (nowGlaze == "Double Chocolate") {
-    basePricenow = basePricenow+1.5;
   } else {
     basePricenow = basePricenow;
   }
@@ -131,6 +124,47 @@ function changeTextimg(newOne){
   priceElement.innerText = "$ "+packPrice.toFixed(2);
 }
 
+
+//create a function to enable getting data from local storage
+function retrieveFromLocalStorage() {
+  const cartArrayString = localStorage.getItem('storedRolls');
+  const cartArray = JSON.parse(cartArrayString);
+  console.log(cartArray);
+
+  for (let rollData of cartArray) {
+    const newOne = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+    newRollset.add(newOne);
+    newCartItem(newOne);
+     
+  }
+}
+
 //call total price function to calculate total at the beginning 
 const totalElement = document.querySelector(".priceTotal");
 totalElement.innerText = "$ "+totalPrice();
+
+
+
+//store item in local storeage
+function saveToLocalStorage() {
+  rollDataArray = Array.from(newRollset);
+  const cartArrayString = JSON.stringify(rollDataArray);
+  localStorage.setItem('storedRolls', cartArrayString);
+
+}
+
+// Remove button function. delete both graphical representation and data
+function deleteElement(newOne) {
+  newOne.element.remove();
+  newRollset.delete(newOne);
+  totalElement.innerText = "$ "+totalPrice();
+  saveToLocalStorage();
+}
+
+//retrieve from local storage when there's data in it
+if (localStorage.getItem('storedRolls') != null) {
+  retrieveFromLocalStorage();
+  totalElement.innerText = "$ "+totalPrice();
+
+}
+

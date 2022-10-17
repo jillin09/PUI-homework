@@ -1,4 +1,5 @@
-const cart=[];
+//empty cart array
+const cartRoll=[];
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -15,7 +16,6 @@ cinnaImage.src = rollop[rollType].imageFile;
 // Update price
 const currentPrice = document.querySelector('#priceAll');
 currentPrice.innerText = rollop[rollType].basePrice + " $";
-
 
 
 // create glazing and pack options
@@ -110,14 +110,44 @@ function packChange(element) {
     }
 }
 
-
+//add to cart button initialization from DOM
 const addtocart = document.querySelector('#cartbutton');
 
+//check if local storage has data inside
+checkLocalStorage();
+
+//on click function of add to cart button
+//contains 1.push new roll
+//2. save to local storage for further use
 addtocart.onclick = function addToCa() {
   let mypac = document.getElementById('dropdown2').options[document.getElementById('dropdown2').selectedIndex].text ;
   let glazinNow = document.getElementById('dropdown').options[document.getElementById('dropdown').selectedIndex].text;
     newItem = new Roll(rollType, glazinNow,mypac,document.getElementById('dropdown').value);
     console.log(newItem);
-    cart.push(newItem);
-    console.log(cart);
+    cartRoll.push(newItem);
+    console.log(cartRoll);
+    //store data after clicking the add to cart button
+    saveToLocalStorage();
+}
+
+//store item in local storeage
+function saveToLocalStorage() {
+  //console.log(cart);
+  const cartArrayString = JSON.stringify(cartRoll);
+  //console.log(cartArrayString);
+  localStorage.setItem('storedRolls', cartArrayString);
+
+}
+
+//create a function to check if there is data in local storage
+//if yes, add data to current array
+//if not, current array=empty=[]
+function checkLocalStorage() {
+  const cartArrayString = localStorage.getItem('storedRolls');
+  const cartArray = JSON.parse(cartArrayString);
+  console.log(cartArray);
+  for (let rollData of cartArray) {
+    const newOne = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+    cartRoll.push(newOne);
+}
 }
