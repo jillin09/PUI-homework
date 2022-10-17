@@ -114,7 +114,14 @@ function packChange(element) {
 const addtocart = document.querySelector('#cartbutton');
 
 //check if local storage has data inside
-checkLocalStorage();
+//if yes, add data to current array
+//if not, current array=empty=[]
+if (localStorage.getItem('storedRolls') != null) {
+  checkLocalStorage();
+}
+else{
+  cartRoll = cartRoll;
+}
 
 //on click function of add to cart button
 //contains 1.push new roll
@@ -140,8 +147,6 @@ function saveToLocalStorage() {
 }
 
 //create a function to check if there is data in local storage
-//if yes, add data to current array
-//if not, current array=empty=[]
 function checkLocalStorage() {
   const cartArrayString = localStorage.getItem('storedRolls');
   const cartArray = JSON.parse(cartArrayString);
@@ -151,3 +156,4 @@ function checkLocalStorage() {
     cartRoll.push(newOne);
 }
 }
+
