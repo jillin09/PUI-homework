@@ -112,27 +112,26 @@ a:visited {
     padding: 10px 30px 10px 30px;
     font-weight: bold;
     margin-right: 40px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    
+
 }
 
 #checkout:active{
     background-color: yellow;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px 30px 10px 30px;
     box-shadow: 2px 2px rgb(228, 144, 33);
     cursor:pointer;    
+    color:white;
     transform: translateY(4px);
-
-    font-weight: bold;
-    margin-right: 40px;
 }
 #checkout:hover{
     background-color: red;
-    border: 3px solid black;
-    padding: 10px 30px 10px 30px;
-    box-shadow: 2px 2px black;
     cursor:pointer;    
     font-weight: bold;
-    margin-right: 40px;
+    color:white;
 }
 .remove{
     font-size: 13px;
@@ -140,8 +139,7 @@ a:visited {
 }
 .remove:hover{
     cursor:pointer;    
-    font-size: 13px;
-    font-weight:bolder;
+    font-size: 14px;
     background-color: lightgoldenrodyellow;
 }
 
