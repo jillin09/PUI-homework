@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Life of a Tomato</title>
+    <meta name="author" content="Jialin Ye" />
+    <meta name="description" content="interactive story about a tomato" />
+    <meta name="keywords"  content="fullpage,tomato,life,scroll,story,continuous" />
+    <link rel="stylesheet" type="text/css" href="./fullpagemaster/dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./fullpagemaster/examples/examples.css" />
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+
+    <script src="./app.js"></script>
+
+  </head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Start</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Seed</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Sprout</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Young Plant</a></li>
+    <li data-menuanchor="5thpage"><a href="#5thpage">Mature Plant</a></li>
+    <li data-menuanchor="6thpage"><a href="#6thpage">Flower</a></li>
+    <li data-menuanchor="7thpage"><a href="#7thpage">Green Tomato</a></li>
+    <li data-menuanchor="8thpage"><a href="#8thpage">Tomato Fruit</a></li>
+
+</ul>
+
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <h1>THE LIFE OF A TOMATO</h1>
+        <p>
+          <img src="./assets/start.png" onclick="myFunction()"alt="start">
+        </p>
+
+        <div id="myDIV">
+      	<p>Key Up/Down, or click the left menu to see the story.</p>
+        </div>
+
+    </div>
+
+    <div class="section active" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1>Seed</h1>
+                <img src="./assets/seed.png"  onclick='clickSeed()' alt="start">
+                <p id="seedText">
+                  Now we have a tomato seed.
+                </p>
+            </div>
+        </div>
+        <div class="slide active" id="slide2">
+            <div class="intro">
+                <h1>seed 2</h1>
+                <p>
+                  <img src="./assets/seed.png" alt="start">
+
+                </p>
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <h1>seed 3</h1>
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Sprout</h1>
+              <img src="./assets/sprout.png" onclick='clickSprout()' alt="start">
+              <p id="sproutText">
+                Finally, the seed baby sprouted.
+              </p>
+
+        </div>
+    </div>
+    <div class="section" id="section3">
+      <div class="intro">
+          <h1>Young Plant</h1>
+            <img src="./assets/yplant.png" onclick='clickSun()'alt="start">
+            <p id="sunText">
+              Your tomato plants love sunny weather:)
+            </p>
+      </div>
+  </div>
+  <div class="section" id="section4">
+    <div class="intro">
+        <h1>Mature Plant</h1>
+          <img src="./assets/mplant.png" onclick='clickCut()' alt="start">
+          <p id="cutText">
+            Wow It's now 14 inch tall, time to prune!
+          </p>
+    </div>
+</div>
+<div class="section" id="section5">
+  <div class="intro">
+      <h1>Flower</h1>
+        <img src="./assets/flower.png" onclick='clickBee()' alt="start">
+        <p id="beeText">
+          Thank you bumblebee!
+        </p>
+  </div>
+</div>    <div class="section" id="section6">
+  <div class="intro">
+      <h1>Green Tomato</h1>
+        <img src="./assets/gtomato.png" onclick='clickGreen()' alt="start">
+        <p id="greenText">
+          Wait a bit! I'm unripen. 
+        </p>
+  </div>
+</div>
+    <div class="section" id="section7">
+      <div class="intro">
+          <h1>Tomato Fruit</h1>
+          <img src="./assets/tomato.png" onclick='clickTomato()' alt="start">
+
+          <p id="tomatoText">
+            Yay, we finally get a cute tomato baby.
+          </p>
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="./fullpagemaster/dist/fullpage.js"></script>
+<script type="text/javascript" src="./fullpagemaster/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f5dd42', '#f5b642', '#f59e42','#f57842','#ff867a'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', 
+        '4thpage', '5thpage','6thpage','7thpage','8thpage'],
+        menu: '#menu',
+        continuousVertical: true,
+        ///navigation: true,
+        slidesNavigation: true,
+        ///lazyLoad: true,
+        credits: {enabled: false}
+    });
+</script>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function clickSeed() {
+    let textOriginal = "Now we have a tomato seed";
+    let textContent = "Tomatoes are 95 percent water, with most varieties soaking up summer rains to become pump and juicy on the vine. Water, along with sunshine and nutrient-rich soil, is needed at every stage of the growing process. Otherwise, tomatoes won't grow, blossom and produce fruit. ";
+    document.getElementById('seedText').innerText = textContent;
+  }
+  function clickSprout() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Tomatoes thrive in soil rich in minerals and micronutrients including phosphorus, potassium, calcium, and magnesium. Fortunately, tomato plants do well in almost all types of soil except heavy clay soil.";
+    document.getElementById('sproutText').innerText = textContent;
+  }
+  function clickSun() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Tomato plants need at least six hours of full sun exposure daily, but if you want to achieve the best results, increase the yield and grow sweeter fruits, you might aim to give your tomato plants at least eight hours of sun per day.";
+    document.getElementById('sunText').innerText = textContent;
+  }
+     
+  function clickCut() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Removing the lower leaves from your tomato plants is the earliest and mildest form of pruning, and for some gardeners it might represent all the pruning you'll ever want to do. The reasoning is simple: Those lower leaves are the ones that are most at risk for infection with soil-borne diseases. ";
+    document.getElementById('cutText').innerText = textContent;
+  }
+  function clickBee() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Unlike most flowers, tomato plants do not give their pollen freely to any old bee or butterfly passing by. They only release it after intense stimulation, such as the kind bumblebees create by rapidly flexing their flight muscles.";
+    document.getElementById('beeText').innerText = textContent;
+  }
+  function clickGreen() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Tomatoes need warmth to ripen. The warmer a tomato is, the quicker it will ripen – putting your tomatoes in the fridge is therefore no help to them at all, and can even degrade their texture to 'mealy'. ";
+    document.getElementById('greenText').innerText = textContent;
+  }
+  function clickTomato() {
+    let textOriginal = "Finally, the seed baby sprouted";
+    let textContent = "Studies suggest that tomatoes may improve heart health. An example of this is how tomato products can fight inflammation and signs of oxidative stress. There’s also research that suggests tomatoes promote skin health. ";
+    document.getElementById('tomatoText').innerText = textContent;
+  }
+     
+  </script>
+  
+
+</body>
+</html>

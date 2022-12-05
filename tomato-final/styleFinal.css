@@ -1,0 +1,22 @@
+body{
+    background-color: #DAF59F;
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    width: 700px;
+    font-size: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+#main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 130px;
+}
