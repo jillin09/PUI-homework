@@ -1,0 +1,223 @@
+body {
+  font-family: arial, helvetica;
+  color: #333;
+  color: rgba(0, 0, 0, 0.5);
+}
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+h1 {
+  font-size: 6em;
+  font-weight: 400;
+}
+p {
+  font-size: 2em;
+}
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+.section {
+  text-align: center;
+}
+#menu li {
+  display: inline-block;
+  margin: 5px;
+  color: #000;
+  background: rgb(247, 235, 235);
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 30px;
+}
+#menu li.active {
+  background: #666;
+  background: orangered;
+  color: #fff;
+}
+#menu li a {
+  text-decoration: none;
+  color: black;
+}
+#menu li.active a:hover {
+  color: orangered;
+}
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu li a,
+#menu li.active a {
+  padding: 10px 20px;
+  height: 30px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  z-index: 70;
+  width: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+#infoMenu {
+  height: 20px;
+  color: #f2f2f2;
+  position: fixed;
+  z-index: 70;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 0.9em;
+  padding: 8px 0 8px 0;
+}
+.button {
+  margin: 20px 0 0 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  margin: 0;
+}
+.section p,
+.intro p {
+  color: black;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+  text-align: center;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+
+/* Sections backgrounds
+* --------------------------------------- */
+#section0 {
+  background-image: linear-gradient(128deg, #daf59f, #cdff64);
+}
+
+#section1 {
+  background-image: linear-gradient(128deg, #cdff64, #d2ea43);
+}
+
+#section2 {
+  background-image: linear-gradient(128deg, #d2ea43, #eacf43);
+}
+
+img {
+  width: 400px;
+}
+img:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+#myDIV {
+  top: 50%;
+  right: 110px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  width: 20%;
+  text-align: left;
+  position: absolute;
+}
+canvas {
+  display: block;
+}
+#section1 {
+  cursor: url("https://img.icons8.com/ios/2x/wet.png") 15 15, move;
+}
+
+#section2 {
+  cursor: url("https://img.icons8.com/ios/2x/ground.png") 15 15, move;
+}
+
+#section3 {
+  cursor: url("https://img.icons8.com/ios/2x/sun.png") 15 15, move;
+}
+
+#section4 {
+  cursor: url("https://img.icons8.com/ios/2x/scissors.png") 15 15, move;
+}
+
+#section5 {
+  cursor: url("https://img.icons8.com/ios/2x/bee.png") 15 15, move;
+}
+#section6 {
+  cursor: url("https://img.icons8.com/ios/2x/temperature.png") 15 15, move;
+}
+#section7 {
+  cursor: url("https://img.icons8.com/ios/2x/fat-emoji.png") 15 15, move;
+}
+
+#fullpage {
+  font-family: "Courier New", Courier, monospace;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-image: /* our video */ ;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index: 3;
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section9 .layer {
+  position: absolute;
+  z-index: 4;
+  width: 50%;
+  left: 400px;
+  top: 23%;
+  font-size: 12px;
+  background-color: #f2f2f293;
+  color: white;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: left;
+  /*
+	* Preventing flicker on some browsers
+	* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+	*/
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#section9 a:hover {
+  background-color: #cdff64;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section9 {
+  overflow: hidden;
+}
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display: none !important;
+}

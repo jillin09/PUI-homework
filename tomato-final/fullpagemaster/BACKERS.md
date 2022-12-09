@@ -11,6 +11,7 @@ Want to be in the list? [Contact me](https://alvarotrigo.com/#contact) | [Become
 ## Bronze Sponsor ($30+ / month)
 
 ### Companies
+
 <!-- bronce start-->
 <table>
   <tbody>

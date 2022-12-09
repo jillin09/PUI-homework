@@ -1,146 +1,129 @@
-
-
-#logo {  
-    width: 400px;  
-    height: auto;  
-    margin-right: 20px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    flex-grow: 1;
-
-
-    }  
-hr{
-    border-top: 5px solid black;
-    flex-grow: 2;
-    flex-wrap: wrap;
-
+#logo {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+}
+hr {
+  border-top: 5px solid black;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
 
 a:link {
-    text-decoration: none;
-    color:black;
-  }
-
-
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 
-    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
 }
-#product{
-    
-    margin-right: 80px;
 
-} 
-#cart{
-    background-color: yellow;
-    font-weight:bold;
-    margin-right: 80px;
-
-} 
-.topsec{
-    display: flex;
-    flex-wrap: wrap;
-    color:black;
-    font-size: 23px;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.topnavright{
-    flex-grow: 2;
-    flex-wrap: wrap;
+#product {
+  margin-right: 80px;
 }
-.navwords{
-    text-align:right;
-
+#cart {
+  background-color: yellow;
+  font-weight: bold;
+  margin-right: 80px;
+}
+.topsec {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 23px;
+}
+.topnavright {
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
+.navwords {
+  text-align: right;
 }
 #page-title {
-    font-size: 28px;
-    text-align:left;
+  font-size: 28px;
+  text-align: left;
 }
 
 a:visited {
-    text-decoration: none;
-    color:black;
-  }
-
-
+  text-decoration: none;
+  color: black;
+}
 
 .cart-thumbnail {
-    border: 3px black solid;
-    width: 150px;
+  border: 3px black solid;
+  width: 150px;
 }
 
-
-.onecontainer{
-    display: flex;
-    flex-direction: row;
-    gap:40px;
+.onecontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
-.descrip{
-    font-size:22px;
-    line-height: 130%;
-    width: 365px;
+.descrip {
+  font-size: 22px;
+  line-height: 130%;
+  width: 365px;
 }
-.emptybox{
-    height: 50px;
-    width: 410px;
-    background-color:transparent;
+.emptybox {
+  height: 50px;
+  width: 410px;
+  background-color: transparent;
 }
-.emptybox2{
-    height: 50px;
-    width: 156px;
-    background-color:transparent;
+.emptybox2 {
+  height: 50px;
+  width: 156px;
+  background-color: transparent;
 }
-.emptybox3{
-    width: 450px;
-    background-color:transparent;
+.emptybox3 {
+  width: 450px;
+  background-color: transparent;
 }
-.price{
-    font-size: 24px;
+.price {
+  font-size: 24px;
 }
-.priceTotal{
-    font-size: 24px;
-}
-
-#lastline{
-    font-size:25px;
-}
-#checkout{
-    background-color: yellow;
-    border: 3px solid black;
-    padding: 10px 30px 10px 30px;
-    font-weight: bold;
-    margin-right: 40px;
-    font-size: 17px;
-    margin-bottom: 40px;
-    
-
+.priceTotal {
+  font-size: 24px;
 }
 
-#checkout:active{
-    background-color: yellow;
-    border: 2px solid black;
-    padding: 10px 30px 10px 30px;
-    box-shadow: 2px 2px rgb(228, 144, 33);
-    cursor:pointer;    
-    color:white;
-    transform: translateY(4px);
+#lastline {
+  font-size: 25px;
 }
-#checkout:hover{
-    background-color: red;
-    cursor:pointer;    
-    font-weight: bold;
-    color:white;
-}
-.remove{
-    font-size: 13px;
-    font-weight: bold;
-}
-.remove:hover{
-    cursor:pointer;    
-    font-size: 14px;
-    background-color: lightgoldenrodyellow;
+#checkout {
+  background-color: yellow;
+  border: 3px solid black;
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  margin-right: 40px;
+  font-size: 17px;
+  margin-bottom: 40px;
 }
 
-
+#checkout:active {
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 2px 2px rgb(228, 144, 33);
+  cursor: pointer;
+  color: white;
+  transform: translateY(4px);
+}
+#checkout:hover {
+  background-color: red;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+.remove {
+  font-size: 13px;
+  font-weight: bold;
+}
+.remove:hover {
+  cursor: pointer;
+  font-size: 14px;
+  background-color: lightgoldenrodyellow;
+}

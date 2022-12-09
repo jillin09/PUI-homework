@@ -1,14 +1,9 @@
 {
   "name": "fullpage.js",
   "homepage": "http://alvarotrigo.com/fullPage/",
-  "authors": [
-    "Alvaro Trigo https://github.com/alvarotrigo"
-  ],
+  "authors": ["Alvaro Trigo https://github.com/alvarotrigo"],
   "description": "Create  beautiful fullscreen scrolling websites",
-  "main": [
-    "dist/fullpage.js",
-    "dist/fullpage.css"
-  ],
+  "main": ["dist/fullpage.js", "dist/fullpage.css"],
   "keywords": [
     "jquery",
     "scrolling",

@@ -1,140 +1,129 @@
-#logo {  
-    width: 400px;  
-    height: auto;  
-    margin-right: 20px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    flex-grow: 1;
-}  
+#logo {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+}
 
-hr{
-    border-top: 5px solid black;
-    flex-grow: 2;
-    flex-wrap: wrap;
-
+hr {
+  border-top: 5px solid black;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
 
 a:link {
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color: black;
 }
 
-
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 
-    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#product{
-    background-color: yellow;
-    font-weight:bold;
-    margin-right: 80px;
-
-} 
-#cart{
-
-    margin-right: 80px;
-
-} 
-
-.topsec{
-    display: flex;
-    flex-wrap: wrap;
-    color:black;
-    font-size: 23px;
+#product {
+  background-color: yellow;
+  font-weight: bold;
+  margin-right: 80px;
 }
-.topnavright{
-    flex-grow: 2;
-    flex-wrap: wrap;
+#cart {
+  margin-right: 80px;
 }
-.navwords{
-    text-align:right;
-    flex-wrap: wrap;
 
+.topsec {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 23px;
+}
+.topnavright {
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
+.navwords {
+  text-align: right;
+  flex-wrap: wrap;
 }
 
 #page-title {
-    font-size: 28px;
-    text-align:left;
+  font-size: 28px;
+  text-align: left;
 }
 
 a:visited {
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color: black;
 }
-.emptybox{
-    height: 7%;
-    width: 3%;
-    background-color:transparent;
-    display:flex;
-    flex-wrap: wrap;
-
-
+.emptybox {
+  height: 7%;
+  width: 3%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
 }
-.container{
-    display:flex;
-    flex-wrap: wrap;
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-thumbnail {
-    border: 3px black solid;
-    display: block;
-    margin-right: 6%;
-    margin-left: 4%;
-    margin-bottom: 10%;
-    width:45%;
-    height:45%;
-
+  border: 3px black solid;
+  display: block;
+  margin-right: 6%;
+  margin-left: 4%;
+  margin-bottom: 10%;
+  width: 45%;
+  height: 45%;
 }
 
-.description{
-    font-size:23px;
-    display: block;
-    margin-left: 1%;
-    margin-top: 3%;
-    width: 350px;
-    
+.description {
+  font-size: 23px;
+  display: block;
+  margin-left: 1%;
+  margin-top: 3%;
+  width: 350px;
 }
 #dropdown {
-    width: 350px;
-    height:50px;
-    border:black 2px solid;
-    font-size:22px;
-    margin-top: -12px;
+  width: 350px;
+  height: 50px;
+  border: black 2px solid;
+  font-size: 22px;
+  margin-top: -12px;
 }
 #dropdown2 {
-    width: 350px;
-    height:50px;
-    border:black 2px solid;
-    font-size:22px;
-    margin-top: -12px;
+  width: 350px;
+  height: 50px;
+  border: black 2px solid;
+  font-size: 22px;
+  margin-top: -12px;
 }
-#lastline{
-    font-weight: bold;
+#lastline {
+  font-weight: bold;
 }
-#cartbutton{
-    text-align: right;
-    background-color: yellow;
-    border: 2px solid black;
-    padding: 10px 20px 10px 20px;
-    margin:auto auto auto 10%;
-} 
+#cartbutton {
+  text-align: right;
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
+  margin: auto auto auto 10%;
+}
 
-#cartbutton:hover{
-    text-align: right;
-    color:white;
-    background-color: red;
-    border: 2px solid black;
-    cursor:pointer;    
-} 
+#cartbutton:hover {
+  text-align: right;
+  color: white;
+  background-color: red;
+  border: 2px solid black;
+  cursor: pointer;
+}
 
-#cartbutton:active{
-    text-align: right;
-    color:white;
-    background-color: red;
-    border: 2px solid black;
-    box-shadow: 5px 1px black;
-    cursor:pointer;    
-} 
+#cartbutton:active {
+  text-align: right;
+  color: white;
+  background-color: red;
+  border: 2px solid black;
+  box-shadow: 5px 1px black;
+  cursor: pointer;
+}
