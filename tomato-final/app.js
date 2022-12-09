@@ -101,3 +101,8 @@ function clickTomato() {
       varieText["tomatoText"].textOriginal;
   }
 }
+
+function toggleMute() {
+  var myAudio = document.getElementById('myVideo');
+  myAudio.muted = !myAudio.muted;
+}

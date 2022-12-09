@@ -44,7 +44,7 @@
         <h1>THE LIFE OF A TOMATO</h1>
 
         <p>
-          <img src="./assets/start.png" onclick="myFunction()" alt="start" />
+          <img src="./assets/start.png" onclick="myFunction()" alt="triangular, green play button" />
         </p>
 
         <div id="myDIV">
@@ -59,7 +59,7 @@
         <div class="slide" id="slide1">
           <div class="intro">
             <h1>Seed</h1>
-            <img src="./assets/seed.png" onclick="clickSeed()" alt="start" />
+            <img src="./assets/seed.png" onclick="clickSeed()" alt="an illustration of seed, brown colored" />
             <p id="seedText">Now we have a tomato seed.</p>
           </div>
         </div>
@@ -67,28 +67,28 @@
       <div class="section" id="section2">
         <div class="intro">
           <h1>Sprout</h1>
-          <img src="./assets/sprout.png" onclick="clickSprout()" alt="start" />
+          <img src="./assets/sprout.png" onclick="clickSprout()" alt="an illustration of sprout growing out of seed with two tiny leaves" />
           <p id="sproutText">Finally, the seed baby sprouted.</p>
         </div>
       </div>
       <div class="section" id="section3">
         <div class="intro">
           <h1>Young Plant</h1>
-          <img src="./assets/yplant.PNG" onclick="clickSun()" alt="start" />
+          <img src="./assets/yplant.PNG" onclick="clickSun()" alt="an illustration of early stage tomato plant with few green leaves just growing out" />
           <p id="sunText">Your tomato plants love sunny weather:)</p>
         </div>
       </div>
       <div class="section" id="section4">
         <div class="intro">
           <h1>Mature Plant</h1>
-          <img src="./assets/mplant.PNG" onclick="clickCut()" alt="start" />
+          <img src="./assets/mplant.PNG" onclick="clickCut()" alt="an illustration of mature tomato plant with fully growned leaves and branches" />
           <p id="cutText">Wow It's now 14 inch tall, time to prune!</p>
         </div>
       </div>
       <div class="section" id="section5">
         <div class="intro">
           <h1>Flower</h1>
-          <img src="./assets/flower.PNG" onclick="clickBee()" alt="start" />
+          <img src="./assets/flower.PNG" onclick="clickBee()" alt="an illustration of tomato flower with six yellow petals" />
           <p id="beeText">Thank you bumblebee!</p>
         </div>
       </div>
@@ -98,7 +98,7 @@
           <img
             src="./assets/gtomato.PNG"
             onclick="clickGreen()"
-            alt="A picture"
+            alt="an illustration of green unripen tomato"
           />
           <p id="greenText">Wait a bit! I'm unripen.</p>
         </div>
@@ -110,7 +110,7 @@
             src="./assets/tomato.png"
             id="mytt"
             onclick="clickTomato()"
-            alt="start"
+            alt="an illustration of red ripen happy tomato"
           />
 
           <p id="tomatoText">
@@ -121,11 +121,16 @@
         </div>
       </div>
       <div class="section" id="section9">
-        <video id="myVideo" loop muted data-autoplay playsinline>
-          <source src="./assets/tomatoVideo.mp4" type="video/mp4" />
-          <source src="./assets/tomatoVideo.mp4" type="video/webm" />
+        <video id="myVideo" loop data-autoplay playsinline alt = "video demostrating the life of a tomato by liziqi on youtube">
+          <source src="./assets/tomatoVideo.mp4" type="video/mp4" alt = "video demostrating the life of a tomato by liziqi on youtube"/>
+          <source src="./assets/tomatoVideo.mp4" type="video/webm" alt = "video demostrating the life of a tomato by liziqi on youtube"/>
         </video>
         <div class="layer">
+          <p>Toggle the switch to mute or unmute
+          <label class="switch" onchange="toggleMute()">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label></p>
           <p>
             Thank you for reading! I would also recommend that you watch
             <a href="https://www.youtube.com/watch?v=u_Jx2pB7OZg"
