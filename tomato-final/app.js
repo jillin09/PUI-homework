@@ -38,49 +38,66 @@ function myFunction() {
 }
 
 function clickSeed() {
-  let textOriginal = "Now we have a tomato seed";
-  let textContent =
-    "Tomatoes are 95 percent water, with most varieties soaking up summer rains to become pump and juicy on the vine. Water, along with sunshine and nutrient-rich soil, is needed at every stage of the growing process. Otherwise, tomatoes won't grow, blossom and produce fruit. ";
-  document.getElementById("seedText").innerText = textContent;
+  if (document.getElementById("seedText").innerText.length < 100) {
+    document.getElementById("seedText").innerText =
+      varieText["seedText"].textContent;
+  } else {
+    document.getElementById("seedText").innerText =
+      varieText["seedText"].textOriginal;
+  }
 }
 function clickSprout() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Tomatoes thrive in soil rich in minerals and micronutrients including phosphorus, potassium, calcium, and magnesium. Fortunately, tomato plants do well in almost all types of soil except heavy clay soil.";
-  document.getElementById("sproutText").innerText = textContent;
+  if (document.getElementById("sproutText").innerText.length < 100) {
+    document.getElementById("sproutText").innerText =
+      varieText["sproutText"].textContent;
+  } else {
+    document.getElementById("sproutText").innerText =
+      varieText["sproutText"].textOriginal;
+  }
 }
 function clickSun() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Tomato plants need at least six hours of full sun exposure daily, but if you want to achieve the best results, increase the yield and grow sweeter fruits, you might aim to give your tomato plants at least eight hours of sun per day.";
-  document.getElementById("sunText").innerText = textContent;
+  if (document.getElementById("sunText").innerText.length < 100) {
+    document.getElementById("sunText").innerText =
+      varieText["sunText"].textContent;
+  } else {
+    document.getElementById("sunText").innerText =
+      varieText["sunText"].textOriginal;
+  }
 }
 
 function clickCut() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Removing the lower leaves from your tomato plants is the earliest and mildest form of pruning, and for some gardeners it might represent all the pruning you'll ever want to do. The reasoning is simple: Those lower leaves are the ones that are most at risk for infection with soil-borne diseases. ";
-  document.getElementById("cutText").innerText = textContent;
+  if (document.getElementById("cutText").innerText.length < 100) {
+    document.getElementById("cutText").innerText =
+      varieText["cutText"].textContent;
+  } else {
+    document.getElementById("cutText").innerText =
+      varieText["cutText"].textOriginal;
+  }
 }
 function clickBee() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Unlike most flowers, tomato plants do not give their pollen freely to any old bee or butterfly passing by. They only release it after intense stimulation, such as the kind bumblebees create by rapidly flexing their flight muscles.";
-  document.getElementById("beeText").innerText = textContent;
+  if (document.getElementById("beeText").innerText.length < 100) {
+    document.getElementById("beeText").innerText =
+      varieText["beeText"].textContent;
+  } else {
+    document.getElementById("beeText").innerText =
+      varieText["beeText"].textOriginal;
+  }
 }
 function clickGreen() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Tomatoes need warmth to ripen. The warmer a tomato is, the quicker it will ripen – putting your tomatoes in the fridge is therefore no help to them at all, and can even degrade their texture to 'mealy'. ";
-  document.getElementById("greenText").innerText = textContent;
+  if (document.getElementById("greenText").innerText.length < 100) {
+    document.getElementById("greenText").innerText =
+      varieText["greenText"].textContent;
+  } else {
+    document.getElementById("greenText").innerText =
+      varieText["greenText"].textOriginal;
+  }
 }
 function clickTomato() {
-  let textOriginal = "Finally, the seed baby sprouted";
-  let textContent =
-    "Studies suggest that tomatoes may improve heart health. An example of this is how tomato products can fight inflammation and signs of oxidative stress. There’s also research that suggests tomatoes promote skin health. ";
-  document.getElementById("tomatoText").innerText = textContent;
-}
-function setImageVisible(id, visible) {
-  var img = document.getElementById(id);
-  img.style.visibility = visible ? "visible" : "hidden";
+  if (document.getElementById("tomatoText").innerText.length < 100) {
+    document.getElementById("tomatoText").innerText =
+      varieText["tomatoText"].textContent;
+  } else {
+    document.getElementById("tomatoText").innerText =
+      varieText["tomatoText"].textOriginal;
+  }
 }
