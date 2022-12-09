@@ -214,8 +214,8 @@ video::-webkit-media-controls {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 49px;
+  height: 23px;
 }
 
 .switch input { 
@@ -231,7 +231,7 @@ video::-webkit-media-controls {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #eacf4377;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -239,21 +239,21 @@ video::-webkit-media-controls {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: whitesmoke;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: orangered;
+  background-color: #00000077;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px orangered;
+  box-shadow: 0 0 1px #00000077;
 }
 
 input:checked + .slider:before {
