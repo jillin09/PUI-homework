@@ -35,8 +35,8 @@ p {
 }
 #menu li.active {
   background: #666;
-  background: orangered;
-  color: #fff;
+  background: #e0675a;
+  color: black;
 }
 #menu li a {
   text-decoration: none;
@@ -57,9 +57,7 @@ p {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-#menu li.active a {
-  color: #fff;
-}
+
 #menu {
   position: fixed;
   top: 90px;
@@ -214,8 +212,8 @@ video::-webkit-media-controls {
 .switch {
   position: relative;
   display: inline-block;
-  width: 49px;
-  height: 23px;
+  width: 80%;
+  height: 53px;
 }
 
 .switch input { 
@@ -239,8 +237,8 @@ video::-webkit-media-controls {
 .slider:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
+  height: 30px;
+  width: 30px;
   left: 4px;
   bottom: 4px;
   background-color: whitesmoke;
@@ -249,17 +247,17 @@ video::-webkit-media-controls {
 }
 
 input:checked + .slider {
-  background-color: #00000077;
+  background-color: #33333344;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #00000077;
+  box-shadow: 0 0 1px #00000044;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(800%);
+  -ms-transform: translateX(800%);
+  transform: translateX(800%);
 }
 
 /* Rounded sliders */
@@ -269,4 +267,11 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+label{
+  color:black;
+  left:40px;
+  font-size: 18px;
+  text-align: center;
+
 }
