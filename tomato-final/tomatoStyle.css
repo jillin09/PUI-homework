@@ -1,30 +1,23 @@
-body {
-  font-family: arial, helvetica;
-  color: #333;
-  color: rgba(0, 0, 0, 0.5);
-}
-.wrap {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-  position: relative;
-}
 h1 {
-  font-size: 6em;
+  /* set title size*/
+  font-size: 5em;
   font-weight: 400;
+  margin: 0;
 }
-p {
-  font-size: 2em;
-}
+
 .intro p {
+  /* set main paragraph width*/
   width: 50%;
   margin: 0 auto;
   font-size: 1.5em;
 }
 .section {
+  /* set section alignment*/
   text-align: center;
 }
 #menu li {
+  /* change menu style to finger friendly tab*/
+
   display: inline-block;
   margin: 5px;
   color: #000;
@@ -33,6 +26,8 @@ p {
   -webkit-border-radius: 10px;
   border-radius: 30px;
 }
+/* make menu item finger sized and click easy*/
+
 #menu li.active {
   background: #666;
   background: #e0675a;
@@ -42,6 +37,8 @@ p {
   text-decoration: none;
   color: black;
 }
+/* show that menu items are clickable when hovering*/
+
 #menu li.active a:hover {
   color: orangered;
 }
@@ -67,48 +64,16 @@ p {
   padding: 10px;
   margin: 10px;
 }
-#infoMenu {
-  height: 20px;
-  color: #f2f2f2;
-  position: fixed;
-  z-index: 70;
-  bottom: 0;
-  width: 100%;
-  text-align: right;
-  font-size: 0.9em;
-  padding: 8px 0 8px 0;
-}
-.button {
-  margin: 20px 0 0 0;
-  vertical-align: middle;
-  display: inline-block;
-}
 
-h1 {
-  font-size: 5em;
-  font-family: "Courier New", Courier, monospace;
-  color: black;
-  margin: 0;
-}
 .section p,
 .intro p {
   color: black;
+  font-size: 22px;
 }
+/* adjust paragraph font size to that it doesn't over flow*/
 
 .section {
   text-align: center;
-}
-
-#section0 {
-  background-image: linear-gradient(128deg, #daf59f, #cdff64);
-}
-
-#section1 {
-  background-image: linear-gradient(128deg, #cdff64, #d2ea43);
-}
-
-#section2 {
-  background-image: linear-gradient(128deg, #d2ea43, #eacf43);
 }
 
 img {
@@ -117,6 +82,7 @@ img {
 img:hover {
   transform: scaleX(1.05) scaleY(1.05);
 }
+/* make image responsive to hovering/show clickable*/
 
 #myDIV {
   top: 50%;
@@ -127,38 +93,46 @@ img:hover {
   text-align: left;
   position: absolute;
 }
-canvas {
-  display: block;
-}
+/*add a div that contains instrction on the first page*/
+
+/* change cursor to show related object*/
 #section1 {
   cursor: url("https://img.icons8.com/ios/2x/wet.png") 15 15, move;
 }
+/* change cursor to show related object*/
 
 #section2 {
   cursor: url("https://img.icons8.com/ios/2x/ground.png") 15 15, move;
-}
+} /* change cursor to show related object*/
 
 #section3 {
   cursor: url("https://img.icons8.com/ios/2x/sun.png") 15 15, move;
 }
+/* change cursor to show related object*/
 
 #section4 {
   cursor: url("https://img.icons8.com/ios/2x/scissors.png") 15 15, move;
 }
+/* change cursor to show related object*/
 
 #section5 {
   cursor: url("https://img.icons8.com/ios/2x/bee.png") 15 15, move;
-}
+} /* change cursor to show related object*/
+
 #section6 {
   cursor: url("https://img.icons8.com/ios/2x/temperature.png") 15 15, move;
-}
+} /* change cursor to show related object*/
+
 #section7 {
   cursor: url("https://img.icons8.com/ios/2x/fat-emoji.png") 15 15, move;
 }
+/* change cursor to show related object*/
 
 #fullpage {
   font-family: "Courier New", Courier, monospace;
-}
+} /* add font family to the whole page*/
+
+/* bring video to the entire page...fullscreen the video*/
 #myVideo {
   position: absolute;
   right: 0;
@@ -167,13 +141,13 @@ canvas {
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
-  background-color: black; 
+  background-color: black; /* in case the video doesn't fit the whole page*/
   background-position: center center;
   background-size: contain;
-  object-fit: cover; 
+  object-fit: cover; /*cover video background */
   z-index: 3;
 }
-
+/* add a layer to the page where instruction and ending notes are given*/
 #section9 .layer {
   position: absolute;
   z-index: 4;
@@ -190,6 +164,7 @@ canvas {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
 #section9 a:hover {
   background-color: #cdff64;
 }
@@ -197,11 +172,11 @@ canvas {
 #section9 {
   overflow: hidden;
 }
-
+/* Hiding video controls*/
 video::-webkit-media-controls {
   display: none !important;
 }
-
+/* change switch style to a toggle*/
 .switch {
   position: relative;
   display: inline-block;
@@ -209,7 +184,7 @@ video::-webkit-media-controls {
   height: 53px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -223,8 +198,8 @@ video::-webkit-media-controls {
   right: 0;
   bottom: 0;
   background-color: #eacf4357;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -235,15 +210,15 @@ video::-webkit-media-controls {
   left: 4px;
   bottom: 4px;
   background-color: #00000044;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
   background-color: #33333344;
 }
 
-
+/* enable toggle move between two ends when clicking*/
 
 input:checked + .slider:before {
   -webkit-transform: translateX(195px);
@@ -258,10 +233,11 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-label{
-  color:black;
-  left:40px;
+/* adjust label size on the last page*/
+
+label {
+  color: black;
+  left: 40px;
   font-size: 18px;
   text-align: center;
-
 }

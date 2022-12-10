@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Life of a Tomato</title>
     <meta name="author" content="Jialin Ye" />
     <meta name="description" content="interactive story about a tomato" />
-    <meta
-      name="keywords"
-      content="fullpage,tomato,life,scroll,story,continuous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./fullpagemaster/dist/fullpage.css"
-    />
+    <meta name="keywords" content="fullpage,tomato,life,scroll,story,continuous" />
+    <link rel="stylesheet" type="text/css" href="./fullpagemaster/dist/fullpage.css"/>
     <link rel="stylesheet" type="text/css" href="./tomatoStyle.css" />
-
-    <script
-      defer
-      type="text/javascript"
-      src="./fullpagemaster/dist/fullpage.js"
-    ></script>
-    <script defer type="text/javascript" src="tomatoData.js"></script>
-    <script defer type="text/javascript" src="app.js"></script>
+    <script defer type="text/javascript" src="./fullpagemaster/dist/fullpage.js" ></script>
+    <script defer type="text/javascript" src="./javascript/tomatoData.js"></script>
+    <script defer type="text/javascript" src="./javascript/app.js"></script>
   </head>
   <body>
+
     <ul id="menu">
-      <li data-menuanchor="firstPage" class="active">
-        <a href="#firstPage">Start</a>
-      </li>
+      <!--Create a menu using lists and insert anchor points-->
+      <li data-menuanchor="firstPage" class="active"> <a href="#firstPage">Start</a></li>
       <li data-menuanchor="secondPage"><a href="#secondPage">Seed</a></li>
       <li data-menuanchor="3rdPage"><a href="#3rdPage">Sprout</a></li>
       <li data-menuanchor="4thpage"><a href="#4thpage">Young Plant</a></li>
@@ -39,59 +27,114 @@
       <li data-menuanchor="9thpage"><a href="#9thpage">Video</a></li>
     </ul>
 
+    <!--Create a div that has all the pages-->
+
     <div id="fullpage">
       <div class="section" id="section0">
-        <h1>THE LIFE OF <br>A TOMATO</h1>
+        <h1>THE LIFE OF <br />A TOMATO</h1>
 
         <p>
-          <img src="./assets/start.png" onclick="myFunction()" alt="triangular, green play button" />
+          <img
+            src="./assets/start.png"
+            onclick="displayPlaytext()"
+            alt="triangular, green play button"
+          />
         </p>
+
+        <!--first page that has start button-->
 
         <div id="myDIV">
           <p>
-            Press Up/Down arrow keys, or click the left menu/center image to see the story.
+
+            <!--Create a instruction for users-->
+
+            Press Up/Down arrow keys, or click the left menu/center image to see
+            the story.
           </p>
           <p>Try clicking/tapping the play button!</p>
         </div>
       </div>
 
+      <!--second page-->
+
       <div class="section active" id="section1">
         <div class="slide" id="slide1">
           <div class="intro">
             <h1>Seed</h1>
-            <img src="./assets/seed.png" onclick="clickSeed()" alt="an illustration of seed, brown colored" />
+            <img
+              src="./assets/seed.png"
+              onclick="clickSeed()"
+              alt="an illustration of seed, brown colored"
+            />
             <p id="seedText">Now we have a tomato seed.</p>
+            <!--display text without interaction-->
           </div>
         </div>
       </div>
+
+      <!--third page-->
+
       <div class="section" id="section2">
         <div class="intro">
           <h1>Sprout</h1>
-          <img src="./assets/sprout.png" onclick="clickSprout()" alt="an illustration of sprout growing out of seed with two tiny leaves" />
+          <img
+            src="./assets/sprout.png"
+            onclick="clickSprout()"
+            alt="an illustration of sprout growing out of seed with two tiny leaves"
+          />
           <p id="sproutText">Finally, the seed baby sprouted.</p>
+          <!--display text without interaction-->
         </div>
       </div>
+
+      <!--fourth page-->
+
       <div class="section" id="section3">
         <div class="intro">
           <h1>Young Plant</h1>
-          <img src="./assets/yplant.PNG" onclick="clickSun()" alt="an illustration of early stage tomato plant with few green leaves just growing out" />
+
+          <img
+            src="./assets/yplant.PNG"
+            onclick="clickSun()"
+            alt="an illustration of early stage tomato plant with few green leaves just growing out"
+          />
           <p id="sunText">Your tomato plants love sunny weather:)</p>
+          <!--display text without interaction-->
         </div>
       </div>
+
+      <!--fifth page-->
+
       <div class="section" id="section4">
         <div class="intro">
           <h1>Mature Plant</h1>
-          <img src="./assets/mplant.PNG" onclick="clickCut()" alt="an illustration of mature tomato plant with fully growned leaves and branches" />
+          <img
+            src="./assets/mplant.PNG"
+            onclick="clickCut()"
+            alt="an illustration of mature tomato plant with fully growned leaves and branches"
+          />
           <p id="cutText">Wow It's now 14 inch tall, time to prune!</p>
+          <!--display text without interaction-->
         </div>
       </div>
+
+      <!--sixth page-->
+
       <div class="section" id="section5">
         <div class="intro">
           <h1>Flower</h1>
-          <img src="./assets/flower.PNG" onclick="clickBee()" alt="an illustration of tomato flower with six yellow petals" />
+          <img
+            src="./assets/flower.PNG"
+            onclick="clickBee()"
+            alt="an illustration of tomato flower with six yellow petals"
+          />
           <p id="beeText">Thank you bumblebee!</p>
+          <!--display text without interaction-->
         </div>
       </div>
+
+      <!--seventh page-->
+
       <div class="section" id="section6">
         <div class="intro">
           <h1>Green Tomato</h1>
@@ -101,8 +144,12 @@
             alt="an illustration of green unripen tomato"
           />
           <p id="greenText">Wait a bit! I'm unripen.</p>
+          <!--display text without interaction-->
         </div>
       </div>
+
+      <!--eighth page-->
+
       <div class="section" id="section7">
         <div class="intro">
           <h1>Tomato Fruit</h1>
@@ -115,17 +162,45 @@
 
           <p id="tomatoText">
             Yay, we finally get a cute tomato baby.
+            <!--display text without interaction-->
           </p>
         </div>
       </div>
+
+      <!--Last page with video-->
+
       <div class="section" id="section9">
-        <video id="myVideo" playsinline loop data-autoplay playsinline alt = "video demostrating the life of a tomato by liziqi on youtube">
-          <source src="./assets/tomatoVideo.mp4" type="video/mp4" alt = "video demostrating the life of a tomato by liziqi on youtube"/>
-          <source src="./assets/tomatoVideo.mp4" type="video/webm" alt = "video demostrating the life of a tomato by liziqi on youtube"/>
+
+      <!--Insert video and enable autoplay-->
+
+
+        <video
+          id="myVideo"
+          playsinline
+          loop
+          data-autoplay
+          playsinline
+          alt="video demostrating the life of a tomato by liziqi on youtube"
+        >
+          <source
+            src="./assets/tomatoVideo.mp4"
+            type="video/mp4"
+            alt="video demostrating the life of a tomato by liziqi on youtube"
+          />
+          <source
+            src="./assets/tomatoVideo.mp4"
+            type="video/webm"
+            alt="video demostrating the life of a tomato by liziqi on youtube"
+          />
         </video>
         <div class="layer">
+          
+          <!--create a toggle that turns on/off the video sound-->
+
           <label class="switch" onchange="toggleMute()">
-            <input type="checkbox" checked>
+
+            <input type="checkbox" checked />
+
             <span class="slider round"></span>
             Toggle the switch to mute or unmute.
           </label>
@@ -136,8 +211,10 @@
             >
             She grew the tomato plant from seeds and turned them into delicious
             dishes!
+            <!--text description of background video and link-->
             <br />Enjoy watching!
           </p>
+          <!--instruction for users-->
           <p>
             If you want to start over just continue scrolling☺️ It's a life
             cycle.

@@ -1,13 +1,13 @@
 var myFullpage = new fullpage("#fullpage", {
   sectionsColor: [
-    "#1bbc9b",
-    "#4BBFC3",
-    "#7BAABE",
+    "#daf59f",
+    "#cdff64",
+    "#d2ea43",
     "#f5dd42",
     "#f5b642",
     "#f59e42",
     "#f57842",
-    "#ff867a",
+    "#ff867a", ///add color to pages created
   ],
   anchors: [
     "firstPage",
@@ -18,17 +18,14 @@ var myFullpage = new fullpage("#fullpage", {
     "6thpage",
     "7thpage",
     "8thpage",
-    "9thpage",
+    "9thpage", ///add anchor points to pages to enable menu clicking and landing
   ],
   menu: "#menu",
-  continuousVertical: true,
-  ///navigation: true,
-  slidesNavigation: true,
-  ///lazyLoad: true,
-  credits: { enabled: false },
+  continuousVertical: true, ///enable continuout scrolling from last to first page
+  credits: { enabled: true },
 });
-
-function myFunction() {
+///display play button text
+function displayPlaytext() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -36,7 +33,7 @@ function myFunction() {
     x.style.display = "none";
   }
 }
-
+///show up new text after user click on the image
 function clickSeed() {
   if (document.getElementById("seedText").innerText.length < 100) {
     document.getElementById("seedText").innerText =
@@ -46,6 +43,8 @@ function clickSeed() {
       varieText["seedText"].textOriginal;
   }
 }
+///show up new text after user click on the image
+
 function clickSprout() {
   if (document.getElementById("sproutText").innerText.length < 100) {
     document.getElementById("sproutText").innerText =
@@ -55,6 +54,8 @@ function clickSprout() {
       varieText["sproutText"].textOriginal;
   }
 }
+///show up new text after user click on the image
+
 function clickSun() {
   if (document.getElementById("sunText").innerText.length < 100) {
     document.getElementById("sunText").innerText =
@@ -64,6 +65,7 @@ function clickSun() {
       varieText["sunText"].textOriginal;
   }
 }
+///show up new text after user click on the image
 
 function clickCut() {
   if (document.getElementById("cutText").innerText.length < 100) {
@@ -74,6 +76,8 @@ function clickCut() {
       varieText["cutText"].textOriginal;
   }
 }
+///show up new text after user click on the image
+
 function clickBee() {
   if (document.getElementById("beeText").innerText.length < 100) {
     document.getElementById("beeText").innerText =
@@ -83,6 +87,8 @@ function clickBee() {
       varieText["beeText"].textOriginal;
   }
 }
+///show up new text after user click on the image
+
 function clickGreen() {
   if (document.getElementById("greenText").innerText.length < 100) {
     document.getElementById("greenText").innerText =
@@ -92,6 +98,8 @@ function clickGreen() {
       varieText["greenText"].textOriginal;
   }
 }
+///show up new text after user click on the image
+
 function clickTomato() {
   if (document.getElementById("tomatoText").innerText.length < 100) {
     document.getElementById("tomatoText").innerText =
@@ -101,8 +109,9 @@ function clickTomato() {
       varieText["tomatoText"].textOriginal;
   }
 }
+///mute the video after user click on the toggle switch
 
 function toggleMute() {
-  var myAudio = document.getElementById('myVideo');
+  var myAudio = document.getElementById("myVideo");
   myAudio.muted = !myAudio.muted;
 }

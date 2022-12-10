@@ -1,6 +1,7 @@
 const varieText = {
   seedText: {
-    textOriginal: "Now we have a tomato seed",
+    textOriginal: "Now we have a tomato seed", ///text when first load
+    ///text after click
     textContent:
       "Tomatoes are 95 percent water, with most varieties soaking up summer rains to become pump and juicy on the vine. Water, along with sunshine and nutrient-rich soil, is needed at every stage of the growing process. Otherwise, tomatoes won't grow, blossom and produce fruit. ",
   },
